@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>pptsrm.ru</title>
+    <meta name="csrf-param" content="_csrf-frontend" />
+    <meta
+      name="csrf-token"
+      content="FIv0hYQGXmwrgHg2JjHTu-SpN2zGa0SmwcH2Ro6dy0hd7JHj0ms4WF7QElpnforOtc1zVasSE56biLBw38qNIg=="
+    />
+    <link href="/assets/5b44884/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet"></head>
+<!--     <link href="/Users/1111/Documents/ppt/web/assets/5b44884/css/bootstrap.css" rel="stylesheet" />
+    <link href="/Users/1111/Documents/ppt/web/css/site.css" rel="stylesheet" /> -->
+  </head>
+  <body class="d-flex flex-column h-100">
+    <main>
+      <div class="container mb-5">
+        <h1 class="mb-5">Название задачи</h1>
+
+        <div class="d-flex align-items-center mb-5">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+              Выбрать отделы:
+            </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="form-check dropdown-item">
+              <label class="form-check-label">
+                <input class="form-check-input mr-1" type="checkbox" value="">
+                Отдел 1
+              </label>
+            </li>
+            <li class="form-check dropdown-item">
+              <label class="form-check-label">
+                <input class="form-check-input mr-1" type="checkbox" value="">
+                Отдел 2
+              </label>
+            </li>
+          </ul>
+          </div>
+          <button class="btn btn-secondary ml-3">Сохранить</button>
+        </div>
+
+        <div class="mb-5">
+          <div class="list-group mt-5 overflow-auto" style="max-height: 500px">
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <span class="mr-3 h6">Маркова Татьяна Степановна</span>
+                    <span class="text-muted font-weight-light font-italic">15:25 02.03.2023</span>
+                    <p class="text-muted font-weight-light d-none">Составление документации монтажных работ</p> 
+                  </div>
+                  <div class="d-flex">
+                    <a class="btn btn-link mr-3" href="#" type="button">Файлы</a>
+                    <div class="dropdown">
+                      <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                        ...
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li class="form-check dropdown-item">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">Редактировать</label>
+                          </div>
+                        </li>
+                        <li class="form-check dropdown-item">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">Удалить</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <p>With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <span class="mr-3 h6">Маркова Татьяна Степановна</span>
+                    <span class="text-muted font-weight-light font-italic">15:25 02.03.2023</span>
+                    <p class="text-muted font-weight-light d-none">Здесь может быть название задачи или отдела</p> 
+                  </div>
+                  <div class="d-flex">
+                    <a class="btn btn-link mr-3" href="#" type="button">Файлы</a>
+                    <div class="dropdown">
+                      <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                        ...
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li class="form-check dropdown-item">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">Редактировать</label>
+                          </div>
+                        </li>
+                        <li class="form-check dropdown-item">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">Удалить</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <p>With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+
+          <textarea row="3" type="text" class="form-control mt-5" placeholder="Введите сообщение" aria-describedby="button-addon2"></textarea>
+          <form>
+            <div class="form-file mt-3">
+              <input type="file" class="form-file-input" id="customFile">
+              <label class="form-file-label" for="customFile">
+                <span class="form-file-text">Choose file...</span>
+                <span class="form-file-button">Browse</span>
+              </label>
+            </div>
+            <button class="btn btn-primary mt-3" type="button" id="button-addon2">Отправить</button>
+          </form>
+        </div>
+
+        <button class="btn btn-secondary mt-5" type="button" id="">Удалить задачу</button>
+      </div>
+    </main>
+    <script src="/assets/b4140694/jquery.min.js"></script>
+    <script src="/assets/5b44884/js/bootstrap.bundle.js"></script>
+    <!-- <script src="/Users/1111/Documents/ppt/web/assets/b4140694/jquery.min.js"></script>
+    <script src="/Users/1111/Documents/ppt/web/assets/5b44884/js/bootstrap.bundle.js"></script> -->
+  </body>
