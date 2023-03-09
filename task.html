@@ -25,20 +25,20 @@
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
               Выбрать отделы:
             </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li class="form-check dropdown-item">
-              <label class="form-check-label">
-                <input class="form-check-input mr-1" type="checkbox" value="">
-                Отдел 1
-              </label>
-            </li>
-            <li class="form-check dropdown-item">
-              <label class="form-check-label">
-                <input class="form-check-input mr-1" type="checkbox" value="">
-                Отдел 2
-              </label>
-            </li>
-          </ul>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li class="form-check dropdown-item">
+                <label class="form-check-label">
+                  <input class="form-check-input mr-1" type="checkbox" value="">
+                  Отдел 1
+                </label>
+              </li>
+              <li class="form-check dropdown-item">
+                <label class="form-check-label">
+                  <input class="form-check-input mr-1" type="checkbox" value="">
+                  Отдел 2
+                </label>
+              </li>
+            </ul>
           </div>
           <button class="btn btn-secondary ml-3">Сохранить</button>
         </div>
@@ -46,7 +46,19 @@
         <div class="mt-5">
           <h4>Сообщения</h4>
 
-          <div class="list-group mt-5 overflow-auto" style="max-height: 500px">
+          <div class="dropdown mt-5">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+              Сортировка
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><button class="dropdown-item" type="button">По дате (сначала новые)</button></li>
+              <li><button class="dropdown-item" type="button">По дате (сначала старые)</button></li>
+              <li><button class="dropdown-item" type="button">По имени автора (А-Б)</button></li>
+              <li><button class="dropdown-item" type="button">По имени автора (Б-А)</button></li>
+            </ul>
+          </div>
+
+          <div class="list-group mt-3 overflow-auto" style="max-height: 500px">
               <div class="list-group-item">
                   <div class="d-flex justify-content-between">
                     <div>
@@ -55,7 +67,7 @@
                       <p class="text-muted font-weight-light d-none">Составление документации монтажных работ</p> 
                     </div>
                     <div class="d-sm-flex">
-                      <a class="btn btn-link" href="#" type="button">Файлы</a>
+                      <a class="btn btn-link" href="#"><img src="/icons/file-earmark.svg"></a>
                       <div class="dropdown ml-3">
                         <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
                           ...
@@ -82,7 +94,7 @@
                       <p class="text-muted font-weight-light d-none">Составление документации монтажных работ</p> 
                     </div>
                     <div class="d-sm-flex">
-                      <a class="btn btn-link" href="#" type="button">Файлы</a>
+                      <a class="btn btn-link" href="#"><img src="/icons/file-earmark.svg"></a>
                       <div class="dropdown ml-3">
                         <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false">
                           ...

@@ -20,25 +20,25 @@
       <div class="container mb-5">
         <h1 class="mb-5">Название проекта</h1>
 
-        <div class="d-flex flex-wrap align-items-center mb-5">
+        <!-- <div class="d-flex flex-wrap align-items-center mb-5">
           <div class="dropdown mr-3 mb-3">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
               Привязать задачу:
             </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li class="form-check dropdown-item">
-              <label class="form-check-label">
-                <input class="form-check-input mr-1" type="checkbox" value="">
-                Dapibus ac facilisis in
-              </label>
-            </li>
-            <li class="form-check dropdown-item">
-              <label class="form-check-label">
-                <input class="form-check-input mr-1" type="checkbox" value="">
-                Morbi leo risus
-              </label>
-            </li>
-          </ul>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li class="form-check dropdown-item form-switch">
+                <label class="form-check-label">
+                  <input class="form-check-input mr-1" type="checkbox" value="">
+                  Dapibus ac facilisis in
+                </label>
+              </li>
+              <li class="form-check dropdown-item form-switch">
+                <label class="form-check-label">
+                  <input class="form-check-input mr-1" type="checkbox" value="">
+                  Dapibus ac facilisis in Morbi leo risus
+                </label>
+              </li>
+            </ul>
           </div>
 
           <div class="dropdown mr-auto mb-3">
@@ -61,9 +61,114 @@
           </ul>
           </div>
           <button class="btn btn-secondary mb-3">Сохранить</button>
+        </div> -->
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item active" role="presentation">
+            <a class="nav-link" id="home-tab" data-toggle="tab" href="#tasks" role="tab" aria-controls="tasks" aria-selected="false">Задачи</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#otdely" role="tab" aria-controls="otdely" aria-selected="false">Отделы</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show" id="tasks" role="tabpanel" aria-labelledby="tasks-tab">
+            <h4 class="mt-5">Задачи проекта</h4>
+
+            <div class="dropdown mt-5">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                Привязать задачу:
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li class="form-check dropdown-item form-switch">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox" value="">
+                    Dapibus ac facilisis in
+                  </label>
+                </li>
+                <li class="form-check dropdown-item form-switch">
+                  <label class="form-check-label">
+                    <input class="form-check-input mr-1" type="checkbox" value="">
+                    Dapibus ac facilisis in Morbi leo risus
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <form class="d-flex mt-3 mb-5">
+              <input type="text" class="form-control" placeholder="Создать новую задачу..." id="FormControlInput1" aria-describedby="button-addon2">
+              <button class="btn btn-primary">Добавить</button>
+            </form>
+
+            <div class="list-group-flush mb-3 overflow-auto" style="max-height: 500px">
+              <div class="list-group-item list-group-item-action d-flex">
+                <a class="link-secondary" href="task.html">Dapibus ac facilisis in</a>
+                <button class="btn btn-light btn-sm ml-auto">-</button>
+              </div>
+                <a href="task.html" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                <a href="task.html" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                <div class="list-group-flush collapse" id="collapseTask2">
+                    <a href="task.html" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                    <a href="task.html" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                    <a href="task.html" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                    <a href="task.html" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+                </div>
+            </div>
+            <a class="btn btn-link mr-3 link-dark" role="button" data-toggle="collapse" data-target="#collapseTask2" aria-expanded="false" aria-controls="collapseTask2">
+                Показать все
+            </a>
+          </div>
+
+          <div class="tab-pane fade" id="otdely" role="tabpanel" aria-labelledby="otdely-tab">
+            <div class="tab-pane fade show" id="tasks" role="tabpanel" aria-labelledby="tasks-tab">
+              <h4 class="mt-5">Отделы проекта</h4>
+  
+              <div class="dropdown mt-5 mb-5">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                  Привязать отдел:
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li class="form-check dropdown-item form-switch">
+                    <label class="form-check-label">
+                      <input class="form-check-input mr-1" type="checkbox" value="">
+                      Dapibus ac facilisis in
+                    </label>
+                  </li>
+                  <li class="form-check dropdown-item form-switch">
+                    <label class="form-check-label">
+                      <input class="form-check-input mr-1" type="checkbox" value="">
+                      Dapibus ac facilisis in Morbi leo risus
+                    </label>
+                  </li>
+                </ul>
+              </div>
+  
+              <ul class="list-group-flush mb-3 overflow-auto" style="max-height: 500px">
+                <li>
+                  <button class="dropdown-item" href="task.html" type="button">Dapibus ac facilisis in</button>
+                  <button class="btn btn-light btn-sm ml-auto">-</button>
+                </li>
+                <div class="list-group-item list-group-item-action d-flex">
+                  <a class="link-secondary" href="task.html">Dapibus ac facilisis in</a>
+                  <button class="btn btn-light btn-sm ml-auto">-</button>
+                </div>
+                  <a href="task.html" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                  <a href="task.html" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                  <ul class="list-group-flush collapse" id="collapseTask2">
+                      <a href="task.html" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                      <a href="task.html" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                      <a href="task.html" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                      <a href="task.html" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+                  </ul>
+                </ul>
+              <a class="btn btn-link mr-3 link-dark" role="button" data-toggle="collapse" data-target="#collapseTask2" aria-expanded="false" aria-controls="collapseTask2">
+                  Показать все
+              </a>
+          </div>
         </div>
 
-        <div class="w-100">
+        <!-- <div class="w-100">
             <h4>Задачи проекта</h4>
 
             <form class="d-flex flex-column mt-5">
@@ -72,7 +177,11 @@
                 <button class="btn btn-primary mt-3 align-self-end">Добавить</button>
             </form>
 
-            <div class="list-group-flush mb-3">
+            <div class="list-group-flush mb-3 overflow-auto" style="max-height: 500px">
+              <div class="list-group-item list-group-item-action d-flex">
+                <a class="link-secondary" href="task.html">Dapibus ac facilisis in</a>
+                <button class="btn btn-light btn-sm ml-auto">-</button>
+              </div>
                 <a href="task.html" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
                 <a href="task.html" class="list-group-item list-group-item-action">Morbi leo risus</a>
                 <a href="task.html" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
@@ -83,10 +192,10 @@
                     <a href="task.html" class="list-group-item list-group-item-action">Vestibulum at eros</a>
                 </div>
             </div>
-            <a class="btn btn-link mr-3" role="button" data-toggle="collapse" data-target="#collapseTask2" aria-expanded="false" aria-controls="collapseTask2">
+            <a class="btn btn-link mr-3 link-dark" role="button" data-toggle="collapse" data-target="#collapseTask2" aria-expanded="false" aria-controls="collapseTask2">
                 Показать все
             </a>
-        </div>
+        </div> -->
 
         <div class="mt-5">
             <h4>Сообщения</h4>
@@ -100,7 +209,7 @@
                         <p class="text-muted font-weight-light">Составление документации монтажных работ</p> 
                       </div>
                       <div class="d-sm-flex">
-                        <a class="btn btn-link" href="#" type="button">Файлы</a>
+                        <a class="btn btn-link" href="#"><img src="/icons/file-earmark.svg"></a>
                         <div class="dropdown ml-3">
                           <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
                             ...
@@ -127,7 +236,7 @@
                         <p class="text-muted font-weight-light">Составление документации монтажных работ</p> 
                       </div>
                       <div class="d-sm-flex">
-                        <a class="btn btn-link" href="#" type="button">Файлы</a>
+                        <a class="btn btn-link" href="#"><img src="/icons/file-earmark.svg"></a>
                         <div class="dropdown ml-3">
                           <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false">
                             ...
@@ -154,6 +263,6 @@
         </div>
       </div>
     </main>
-    <script src="assets/b4140694/jquery.min.js"></script>
+    <script src="assets/b4140694/jquery.js"></script>
     <script src="assets/5b44884/js/bootstrap.bundle.js"></script>
     </body>
