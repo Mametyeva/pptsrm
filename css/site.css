@@ -75,6 +75,11 @@ a.desc:after {
     pointer-events: none;
 }
 
+.none-decor-l a {
+    text-decoration: none;
+    color: inherit;
+}
+
 @media(max-width:767px) {
     .nav li > form > button.logout {
         display:block;

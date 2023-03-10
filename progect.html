@@ -13,11 +13,56 @@
       content="FIv0hYQGXmwrgHg2JjHTu-SpN2zGa0SmwcH2Ro6dy0hd7JHj0ms4WF7QElpnforOtc1zVasSE56biLBw38qNIg=="
     />
     <link href="assets/5b44884/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link href="css/site.css" rel="stylesheet" />
   </head>
   <body class="d-flex flex-column h-100">
+    <header>
+      <nav
+        id="w0"
+        class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar"
+      >
+        <div class="container">
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#w0-collapse"
+            aria-controls="w0-collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="w0-collapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="progects.html">Проекты</a>
+              </li>
+            </ul>
+            <ul id="w1" class="navbar-nav nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/site/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/site/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/site/signup">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/site/login">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
-      <div class="container mb-5">
+      <div class="container mb-5 mt-5">
         <h1 class="mb-5">Название проекта</h1>
 
         <!-- <div class="d-flex flex-wrap align-items-center mb-5">
@@ -80,31 +125,31 @@
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
                 Привязать задачу:
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li class="form-check dropdown-item form-switch">
-                  <label class="form-check-label">
-                    <input class="form-check-input mr-1" type="checkbox" value="">
-                    Dapibus ac facilisis in
+              <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                <li class="form-check dropdown-item m-1">
+                  <label class="form-check-label ml-1">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Porta ac consectetur ac
                   </label>
                 </li>
-                <li class="form-check dropdown-item form-switch">
-                  <label class="form-check-label">
-                    <input class="form-check-input mr-1" type="checkbox" value="">
-                    Dapibus ac facilisis in Morbi leo risus
+                <li class="form-check dropdown-item m-1">
+                  <label class="form-check-label ml-1">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Dapibus ac facilisis in
                   </label>
                 </li>
               </ul>
             </div>
 
-            <form class="d-flex mt-3 mb-5">
-              <input type="text" class="form-control" placeholder="Создать новую задачу..." id="FormControlInput1" aria-describedby="button-addon2">
-              <button class="btn btn-primary">Добавить</button>
+            <form class="input-group d-flex mt-3 mb-5">
+              <input type="text" class="form-control" placeholder="Создать новую задачу..." aria-describedby="button-addon2">
+              <button class="btn btn-outline-primary" type="button" id="button-addon2">Добавить</button>
             </form>
 
-            <div class="list-group-flush mb-3 overflow-auto" style="max-height: 500px">
+            <div class="list-group-flush mb-3 none-decor-l overflow-auto" style="max-height: 500px">
               <div class="list-group-item list-group-item-action d-flex">
                 <a class="link-secondary" href="task.html">Dapibus ac facilisis in</a>
-                <button class="btn btn-light btn-sm ml-auto">-</button>
+                <button class="btn btn-light btn-sm ml-auto"><img src="icons/x.svg"></button>
               </div>
                 <a href="task.html" class="list-group-item list-group-item-action">Morbi leo risus</a>
                 <a href="task.html" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
@@ -115,9 +160,9 @@
                     <a href="task.html" class="list-group-item list-group-item-action">Vestibulum at eros</a>
                 </div>
             </div>
-            <a class="btn btn-link mr-3 link-dark" role="button" data-toggle="collapse" data-target="#collapseTask2" aria-expanded="false" aria-controls="collapseTask2">
-                Показать все
-            </a>
+            <button class="btn btn-link mr-3" type="button" data-toggle="collapse" data-target="#collapseTask2" aria-expanded="false" aria-controls="collapseTask2">
+              Показать все
+            </button>
           </div>
 
           <div class="tab-pane fade" id="otdely" role="tabpanel" aria-labelledby="otdely-tab">
@@ -128,43 +173,39 @@
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
                   Привязать отдел:
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li class="form-check dropdown-item form-switch">
-                    <label class="form-check-label">
-                      <input class="form-check-input mr-1" type="checkbox" value="">
-                      Dapibus ac facilisis in
+                <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                  <li class="form-check dropdown-item m-1">
+                    <label class="form-check-label ml-1">
+                      <input class="form-check-input" type="checkbox" value="">
+                      Porta ac consectetur ac
                     </label>
                   </li>
-                  <li class="form-check dropdown-item form-switch">
-                    <label class="form-check-label">
-                      <input class="form-check-input mr-1" type="checkbox" value="">
-                      Dapibus ac facilisis in Morbi leo risus
+                  <li class="form-check dropdown-item m-1">
+                    <label class="form-check-label ml-1">
+                      <input class="form-check-input" type="checkbox" value="">
+                      Dapibus ac facilisis in
                     </label>
                   </li>
                 </ul>
               </div>
-  
-              <ul class="list-group-flush mb-3 overflow-auto" style="max-height: 500px">
-                <li>
-                  <button class="dropdown-item" href="task.html" type="button">Dapibus ac facilisis in</button>
-                  <button class="btn btn-light btn-sm ml-auto">-</button>
-                </li>
+
+              <div class="list-group-flush mb-3 none-decor-l overflow-auto" style="max-height: 500px">
                 <div class="list-group-item list-group-item-action d-flex">
                   <a class="link-secondary" href="task.html">Dapibus ac facilisis in</a>
-                  <button class="btn btn-light btn-sm ml-auto">-</button>
+                  <button class="btn btn-light btn-sm ml-auto"><img src="icons/x.svg"></button>
                 </div>
                   <a href="task.html" class="list-group-item list-group-item-action">Morbi leo risus</a>
                   <a href="task.html" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-                  <ul class="list-group-flush collapse" id="collapseTask2">
+                  <div class="list-group-flush collapse" id="collapseTask2">
                       <a href="task.html" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
                       <a href="task.html" class="list-group-item list-group-item-action">Morbi leo risus</a>
                       <a href="task.html" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
                       <a href="task.html" class="list-group-item list-group-item-action">Vestibulum at eros</a>
-                  </ul>
-                </ul>
-              <a class="btn btn-link mr-3 link-dark" role="button" data-toggle="collapse" data-target="#collapseTask2" aria-expanded="false" aria-controls="collapseTask2">
-                  Показать все
-              </a>
+                  </div>
+              </div>
+              <button class="btn btn-link mr-3" type="button" data-toggle="collapse" data-target="#collapseTask2" aria-expanded="false" aria-controls="collapseTask2">
+                Показать все
+              </button>
           </div>
         </div>
 
@@ -209,18 +250,14 @@
                         <p class="text-muted font-weight-light">Составление документации монтажных работ</p> 
                       </div>
                       <div class="d-sm-flex">
-                        <a class="btn btn-link" href="#"><img src="/icons/file-earmark.svg"></a>
+                        <a class="btn btn-link" href="#"><img src="icons/file-earmark.svg"></a>
                         <div class="dropdown ml-3">
                           <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
                             ...
                           </button>
-                          <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1">
-                            <li class="form-check dropdown-item">
-                              <button class="form-check btn btn-link p-0">Редактировать</button>
-                            </li>
-                            <li class="form-check dropdown-item">
-                              <button class="form-check btn btn-link p-0">Удалить</button>
-                            </li>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><button class="dropdown-item" type="button">Редактировать</button></li>
+                            <li><button class="dropdown-item" type="button">Удалить</button></li>
                           </ul>
                         </div>
                       </div>
@@ -236,18 +273,14 @@
                         <p class="text-muted font-weight-light">Составление документации монтажных работ</p> 
                       </div>
                       <div class="d-sm-flex">
-                        <a class="btn btn-link" href="#"><img src="/icons/file-earmark.svg"></a>
+                        <a class="btn btn-link" href="#"><img src="icons/file-earmark.svg"></a>
                         <div class="dropdown ml-3">
                           <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false">
                             ...
                           </button>
-                          <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton2">
-                            <li class="form-check dropdown-item">
-                              <button class="form-check btn btn-link p-0">Редактировать</button>
-                            </li>
-                            <li class="form-check dropdown-item">
-                              <button class="form-check btn btn-link p-0">Удалить</button>
-                            </li>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <li><button class="dropdown-item" type="button">Редактировать</button></li>
+                            <li><button class="dropdown-item" type="button">Удалить</button></li>
                           </ul>
                         </div>
                       </div>
