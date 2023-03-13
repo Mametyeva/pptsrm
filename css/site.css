@@ -75,9 +75,19 @@ a.desc:after {
     pointer-events: none;
 }
 
+.none-decor {
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
 .none-decor-l a {
     text-decoration: none;
     color: inherit;
+}
+
+.rotate {
+    transform: rotate(180deg);
 }
 
 @media(max-width:767px) {

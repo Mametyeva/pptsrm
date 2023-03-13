@@ -91,8 +91,9 @@
           <h4>Сообщения</h4>
 
           <div class="dropdown mt-5">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-              Сортировка
+            <button class="none-decor link-secondary dropdown-btn" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
+              <span>Сортировка</span>
+              <span><img class="rotate-icon" src="icons/caret-down-fill-silver.svg"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li><button class="dropdown-item" type="button">По дате (сначала новые)</button></li>
@@ -156,8 +157,16 @@
             <div class="form-file mt-3">
               <input type="file" class="form-file-input" id="customFile">
               <label class="form-file-label" for="customFile">
-                <span class="form-file-text">Choose file...</span>
-                <span class="form-file-button">Browse</span>
+                <span class="form-file-text">Выберите файл...</span>
+                <span class="form-file-button">Загрузить</span>
+              </label>
+            </div>
+
+            <div class="form-file mt-3">
+              <input type="file" class="form-file-input" id="customFile">
+              <label class="form-file-label" for="customFile">
+                <span class="form-file-text">Выберите медиа...</span>
+                <span class="form-file-button">Загрузить</span>
               </label>
             </div>
             <button class="btn btn-primary mt-3" type="button" id="button-addon2">Отправить</button>
