@@ -64,16 +64,53 @@
     <main>
       <div class="container mt-5">
         <h1 class="mb-5">Файлы</h1>
-        <div class="row gy-3">
-          <div class="col-4 col-sm-3 col-md-2"><img class="w-100 h-auto" src="../woman-bird.jpeg"></div>
-          <div class="col-4 col-sm-3 col-md-2"><img class="w-100 h-auto" src="../woman-bird.jpeg"></div>
-          <div class="col-4 col-sm-3 col-md-2"><img class="w-100 h-auto" src="../woman-bird.jpeg"></div>
-          <div class="col-4 col-sm-3 col-md-2"><img class="w-100 h-auto" src="../woman-bird.jpeg"></div>
-          <div class="col-4 col-sm-3 col-md-2"><img class="w-100 h-auto" src="../woman-bird.jpeg"></div>
-          <div class="col-4 col-sm-3 col-md-2"><img class="w-100 h-auto" src="../woman-bird.jpeg"></div>
-          <div class="col-4 col-sm-3 col-md-2"><img class="w-100 h-auto" src="../woman-bird.jpeg"></div>
-          <div class="col-4 col-sm-3 col-md-2"><img class="w-100 h-auto" src="../woman-bird.jpeg"></div>
+<!--         <div class="row align-items-center">
+          <a class="col-auto" href="#"><img class="pr-2" src="../icons/file-earmark.svg">../icons/file-earmark.svg</a>
+          <span class="col-1 text-muted font-weight-light">14.03.2023</span>
+          <span class="col-auto">Название задачи, в которой добавлен файл</span>
+          <span class="col text-muted font-weight-light">Маркова Татьяна Степановна</span>
         </div>
+        <div class="row align-items-center flex-nowrap mb-5">
+          <a class="col-auto" href="#"><img class="pr-2" src="../icons/file-earmark.svg"></a>
+          <span class="col-auto text-truncate d-inline-blok" style="max-width: 200px">file-earmark.svg</span>
+          <span class="col-1 text-muted font-weight-light mr-3">14.03.2023</span>
+          <span class="col-auto text-truncate d-inline-blok" style="max-width: 400px">Другое название задачи, в которой добавлен файл</span>
+          <span class="col text-muted font-weight-light text-truncate">Морковников Ворфоломей Антипович</span>
+        </div> -->
+        <table class="table table-borderless table-responsive overflow-scroll">
+          <thead class="border-bottom">
+            <tr class="w-100">
+              <th scope="col"></th>
+              <th scope="col"><button class="sort-item none-decor">Дата</button></th>
+              <th scope="col"><button class="sort-item none-decor">Имя</button></th>
+              <th scope="col"><button class="sort-item none-decor">Задача</button></th>
+              <th scope="col"><button class="sort-item none-decor">Автор</button></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><a href="#"><img src="../icons/file-earmark.svg"></a></th>
+              <td class="text-muted font-weight-light">14.03.2023</td>
+              <td class="text-truncate d-blok" style="max-width: 200px"><a class="link-secondary" href="#">file-earmark.svg</a></td>
+              <td class="col text-truncate d-blok none-decor-l" style="max-width: 400px"><a class="link-secondary" href="task.html">Название задачи, в которой добавлен файл</a></td>
+              <td class="col text-muted font-weight-light d-blok text-truncate none-decor-l"><a class="link-secondary" href="#">Инженер - Морковников В.А.</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#"><img src="../icons/file-earmark.svg"></a></th>
+              <td class="text-muted font-weight-light">14.03.2023</td>
+              <td class="text-truncate d-blok" style="max-width: 200px"><a class="link-secondary" href="#">file-earmark.svg</a></td>
+              <td class="col text-truncate d-blok none-decor-l" style="max-width: 400px"><a class="link-secondary" href="task.html">Более длинное название задачи, в которой добавлен файл</a></td>
+              <td class="col text-muted font-weight-light d-blok text-truncate none-decor-l"><a class="link-secondary" href="#">Инженер - Морковников В.А.</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#"><img src="../icons/file-earmark.svg"></a></th>
+              <td class="text-muted font-weight-light">14.03.2023</td>
+              <td class="text-truncate d-blok" style="max-width: 200px"><a class="link-secondary" href="#">file-file-file-earmark.svg</a></td>
+              <td class="col text-truncate d-blok none-decor-l" style="max-width: 400px"><a class="link-secondary" href="task.html">Другое, еще более длинное название задачи, в которой добавлен файл</a></td>
+              <td class="col text-muted font-weight-light d-blok text-truncate none-decor-l"><a class="link-secondary" href="#">Главный инженер - Подшивадлов В.А.</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
     <script src="../assets/b4140694/jquery.min.js"></script>

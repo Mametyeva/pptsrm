@@ -70,7 +70,7 @@ a.desc:after {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.disabled-block, .disabled-block a, .disabled-block button {
+.disabled-block, .disabled-block a, .disabled-block h4, .disabled-block button {
     color: #999;
     pointer-events: none;
 }
@@ -79,6 +79,8 @@ a.desc:after {
     text-decoration: none;
     border: none;
     background: none;
+    font-weight: inherit;
+    font-size: inherit;
 }
 
 .none-decor-l a {
@@ -86,16 +88,8 @@ a.desc:after {
     color: inherit;
 }
 
-.rotate {
-    transform: rotate(180deg);
-}
-
 small {
     font-size: 13px;
-}
-
-.drop-icon {
-    height: 11px;
 }
 
 .form-file-text {
@@ -127,6 +121,33 @@ button, .btn, .form-file-button {
 
 .btn-sm {
     padding: 0.25rem 0.6rem;
+}
+
+h4 > a {
+    color: #343a40;
+}
+
+h4 > a:hover {
+    color: black;
+}
+
+.sort-item::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    content: url(../icons/arrow-down.svg);
+    transform: translate(0, 10%);
+}
+
+tbody th img {
+    width: 18px;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+.tr-active > tbody > tr:hover {
+    background-color: #f8f9fa;
 }
 
 @media(max-width:767px) {
