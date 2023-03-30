@@ -62,57 +62,57 @@
       </nav>
     </header>
     <main>
-      <div class="container mt-5">
-        <div class="d-flex align-items-center mb-5">
-          <h1>Название проекта</h1>
-          <button class="btn edit-btn align-self-start ml-3"></button>
-        </div>
-        <div class="d-flex align-items-center mb-3">
-          <h4>Задачи</h4>
-          <a class="btn btn-primary btn-sm ml-3" role="button" data-toggle="collapse" data-target="#collapseTask1" aria-expanded="false" aria-controls="collapseTask1">+</a>
-        </div>
-        
-        <div class="list-group-flush collapse mt-3" id="collapseTask1">
-          <a class="btn btn-primary mb-3" role="button" href="tasks.html">Привязать задачи</a>
-          <form class="input-group d-flex mb-5">
-              <input type="text" class="form-control" placeholder="Создать новую задачу..." aria-describedby="button-addon2">
-              <button class="btn btn-primary" type="button" id="button-addon2">Добавить</button>
-          </form>
-        </div>
+      <div class="container mb-5 mt-5">
+        <h1 class="mb-5">Создание нового отдела</h1>
+        <form class="mb-5">
+            <div class="dropdown mb-3">
+                <button class="dropdown-toggle link-secondary none-decor pl-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                  Привязать проекты
+                </button>
+                <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                  <li class="form-check dropdown-item m-1">
+                    <label class="form-check-label ml-1">
+                      <input class="form-check-input" type="checkbox" value="">
+                      Проект 1
+                    </label>
+                  </li>
+                  <li class="form-check dropdown-item m-1">
+                    <label class="form-check-label ml-1">
+                      <input class="form-check-input" type="checkbox" value="">
+                      Проект 2
+                    </label>
+                  </li>
+                </ul>
+            </div>
+            <input type="email" class="form-control mb-3" placeholder="Название нового отдела..." id="exampleInputEmail1" aria-describedby="emailHelp">
+        </form>
+        <a class="btn btn-primary mb-3" role="button" href="tasks.html">Добавить сотрудников</a>
+    
+        <h4 class="mb-3">Список сотрудников</h4>
 
         <div class="list-group-flush mb-3 none-decor-l overflow-auto mb-5" style="max-height: 500px">
           <div class="list-group-item list-group-item-action d-flex justify-content-between">
-            <a class="link-secondary mb-1" href="task.html">Dapibus ac facilisis in</a>
+            <a class="link-secondary mb-1" href="worker.html">Инженер - Морковников В.А. - morkov-kov@mail.ru</a>
             <button class="del-btn none-decor"><img src="../icons/x.svg"></button>
           </div>
           <div class="list-group-item list-group-item-action d-flex justify-content-between">
-            <a class="link-secondary mb-1" href="task.html">Morbi leo risus</a>
+            <a class="link-secondary mb-1" href="worker.html">Главный инженер - Подшивадлов В.А. - morkov-kov@mail.ru</a>
             <button class="del-btn none-decor"><img src="../icons/x.svg"></button>
           </div>
           <div class="list-group-item list-group-item-action d-flex justify-content-between">
-            <a class="link-secondary mb-1" href="task.html">Porta ac consectetur ac</a>
+            <a class="link-secondary mb-1" href="worker.html">Porta ac consectetur ac</a>
             <button class="del-btn none-decor"><img src="../icons/x.svg"></button>
           </div>
           <div class="list-group-item list-group-item-action d-flex justify-content-between">
-            <a class="link-secondary mb-1" href="task.html">Morbi leo risus. Porta ac consectetur ac</a>
+            <a class="link-secondary mb-1" href="worker.html">Morbi leo risus. Porta ac consectetur ac</a>
             <button class="del-btn none-decor"><img src="../icons/x.svg"></button>
           </div>
           <div class="list-group-item list-group-item-action d-flex justify-content-between">
-            <a class="link-secondary mb-1" href="task.html">Dapibus ac facilisis in Porta</a>
+            <a class="link-secondary mb-1" href="worker.html">Dapibus ac facilisis in Porta</a>
             <button class="del-btn none-decor"><img src="../icons/x.svg"></button>
           </div>
         </div>
-
-<!--         <button class="btn btn-primary">Привязать задачу</button>
-
-        <form class="input-group d-flex mt-3">
-          <input type="text" class="form-control" placeholder="Создать новую задачу..." aria-describedby="button-addon2">
-          <button class="btn btn-primary" type="button" id="button-addon2">Добавить</button>
-        </form> -->
-      </div>
-      <div class="container d-flex">
-        <button class="btn btn-secondary" type="button" id="">Удалить</button>
-        <button class="btn btn-secondary ml-3" type="button" id="">Деактивировать</button>
+        <button type="submit" class="btn btn-primary">Сохранить</button>
       </div>
     </main>
     <script src="../assets/b4140694/jquery.js"></script>

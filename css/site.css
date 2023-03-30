@@ -150,6 +150,10 @@ tbody tr {
     background-color: #f8f9fa;
 }
 
+.container-md {
+    padding-top: 70px;
+}
+
 @media(max-width:767px) {
     .nav li > form > button.logout {
         display:block;
