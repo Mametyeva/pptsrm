@@ -142,10 +142,6 @@ tbody th img {
     width: 18px;
 }
 
-tbody tr {
-    cursor: pointer;
-}
-
 .tr-active > tbody > tr:hover {
     background-color: #f8f9fa;
 }
@@ -160,6 +156,10 @@ tbody tr {
         text-align: left;
         width: 100%;
         padding: 10px 0;
+    }
+
+    .list-group-item .del-btn {
+        display: block;
     }
 }
 
