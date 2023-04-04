@@ -107,16 +107,12 @@ small {
     background-image: url(../icons/pencil-fill.svg);
 }
 
-button, .btn, .form-file-button {
+button.btn, .form-file-button {
     font-size: 14px;
 }
 
-.list-group-item .del-btn {
-    display: none;
-}
-
-.list-group-item:hover .del-btn {
-    display: block;
+.list-group-item .edit-btn.sm {
+    padding: 12px 20px;
 }
 
 .btn-sm {
@@ -156,10 +152,6 @@ tbody th img {
         text-align: left;
         width: 100%;
         padding: 10px 0;
-    }
-
-    .list-group-item .del-btn {
-        display: block;
     }
 }
 

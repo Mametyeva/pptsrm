@@ -63,7 +63,10 @@
     </header>
     <main>
         <div class="container mt-5">
-          <h1 class="mb-5">Иванов Иван Иванович</h1>
+          <div class="d-flex align-items-center mb-5">
+            <h1>Иванов Иван Иванович</h1>
+            <button class="btn edit-btn align-self-start ml-3"></button>
+          </div>
           <div class="row gy-3">
             <!-- <div class="col-auto"><img class="w-100 h-auto" style="min-width:100px; max-width:150px" src="../woman-bird.jpeg"></div> -->
             <div class="col-auto overflow-hidden" style="width:180px; height:156px"><img class="w-100 h-auto" src="../woman-bird.jpg"></div>
@@ -72,27 +75,41 @@
                     <tbody>
                         <tr>
                             <th class="col-2 text-muted font-weight-light">Должность</th>
-                            <td>Инженер</td>
+                            <td><input type="text" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="Инженер"></td>
                         </tr>
                         <tr>
                             <th class="col-2 text-muted font-weight-light">Логин</th>
-                            <td class="text-nowrap">morkov-kov@mail.ru</td>
+                            <td class="text-nowrap"><input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="morkov-kov@mail.ru"></td>
                         </tr>
                         <tr>
                             <th class="col-2 text-muted font-weight-light">Почта</th>
-                            <td class="text-nowrap">morkov-kov@mail.ru</td>
+                            <td class="text-nowrap"><input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="morkov-kov@mail.ru"></td>
                         </tr>
                         <tr>
                             <th class="col-2 text-muted font-weight-light">Телефон</th>
-                            <td class="text-nowrap">+7 (999) 852-7114</td>
+                            <td class="text-nowrap"><input type="tel" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="+7 (999) 852-7114"></td>
                         </tr>
                         <tr>
                             <th class="col-2 text-muted font-weight-light">Отдел</th>
-                            <td>Отдел проектирования</td>
+                            <td>
+                                <select class="form-select form-select-sm" aria-label="Select example">
+                                    <option selected>Отдел проектирования</option>
+                                    <option value="1">Отдел 1</option>
+                                    <option value="2">Отдел 2</option>
+                                    <option value="3">Отдел 3</option>
+                                  </select>
+                            </td>
                         </tr>
                         <tr>
                             <th class="col-2 text-muted font-weight-light text-nowrap">Права доступа</th>
-                            <td class="text-nowrap">Сотрудник</td>
+                            <td class="text-nowrap">
+                                <select class="form-select form-select-sm" aria-label="Default select example">
+                                    <option selected>Сотрудник</option>
+                                    <option value="1">Сотрудник</option>
+                                    <option value="2">Уникальные права</option>
+                                    <option value="3">Суперадмин</option>
+                                  </select>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -101,13 +118,14 @@
           <div class="mt-5 mb-5">
             <div class="d-flex align-items-center mb-3">
                 <h4>Задачи</h4>
-                <!-- <a class="btn btn-primary btn-sm ml-3" role="button" href="add-tasks.html">+</a> -->
+                <a class="btn btn-primary btn-sm ml-3" role="button" href="add-tasks.html">+</a>
               </div>
       
               <div class="list-group-flush mb-3 none-decor-l overflow-auto mb-5">
                 <div class="list-group-item list-group-item-action d-flex justify-content-between">
+                  <input class="form-check-input d-none" type="checkbox" value="" id="" checked>
                   <a class="link-secondary mb-1" href="task.html">Dapibus ac facilisis in</a>
-                  <div class="dropdown d-none">
+                  <div class="dropdown">
                     <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                       <li><button class="dropdown-item" type="button">Редактировать</button></li>
@@ -117,8 +135,9 @@
                   </div>
                 </div>
                 <div class="list-group-item list-group-item-action d-flex justify-content-between">
+                  <input class="form-check-input d-none" type="checkbox" value="" id="">
                   <a class="link-secondary mb-1" href="task.html">Morbi leo risus</a>
-                  <div class="dropdown d-none">
+                  <div class="dropdown">
                     <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                       <li><button class="dropdown-item" type="button">Редактировать</button></li>
@@ -128,8 +147,9 @@
                   </div>
                 </div>
                 <div class="list-group-item list-group-item-action d-flex justify-content-between">
+                  <input class="form-check-input d-none" type="checkbox" value="" id="">
                   <a class="link-secondary mb-1" href="task.html">Porta ac consectetur ac</a>
-                  <div class="dropdown d-none">
+                  <div class="dropdown">
                     <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                       <li><button class="dropdown-item" type="button">Редактировать</button></li>
@@ -139,8 +159,9 @@
                   </div>
                 </div>
                 <div class="list-group-item list-group-item-action d-flex justify-content-between">
+                  <input class="form-check-input d-none" type="checkbox" value="" id="">
                   <a class="link-secondary mb-1" href="task.html">Morbi leo risus. Porta ac consectetur ac</a>
-                  <div class="dropdown d-none">
+                  <div class="dropdown">
                     <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                       <li><button class="dropdown-item" type="button">Редактировать</button></li>
@@ -150,16 +171,9 @@
                   </div>
                 </div>
                 <div class="list-group-item list-group-item-action d-flex justify-content-between">
+                  <input class="form-check-input d-none" type="checkbox" value="" id="">
                   <a class="link-secondary mb-1" href="task.html">Dapibus ac facilisis in Porta</a>
-                  <div class="dropdown d-none">
-                    <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                      <li><button class="dropdown-item" type="button">Редактировать</button></li>
-                      <li><button class="dropdown-item" type="button">Акт / Деакт</button></li>
-                      <li><button class="dropdown-item" type="button">Удалить</button></li>
-                    </ul>
-                  </div>
-                  <div class="dropdown d-none">
+                  <div class="dropdown">
                     <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                       <li><button class="dropdown-item" type="button">Редактировать</button></li>
@@ -170,6 +184,13 @@
                 </div>
               </div>
           </div>
+        </div>
+        <div class="container d-flex justify-content-between">
+            <div class="d-flex">
+                <button class="btn btn-secondary" type="button" id="">Удалить</button>
+                <button class="btn btn-secondary ml-3" type="button" id="">Деактивировать</button>
+            </div>
+            <button class="btn btn-primary" type="button" id="">Сохранить</button>
         </div>
     </main>
     <script src="../assets/b4140694/jquery.min.js"></script>

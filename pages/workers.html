@@ -65,7 +65,7 @@
       <div class="container-md mt-5 mb-5">
         <div class="d-flex align-items-center mb-5">
           <h1>Сотрудники</h1>
-          <a class="btn btn-primary ml-3" role="button" data-toggle="collapse" data-target="#collapseTask1" aria-expanded="false" aria-controls="collapseTask1">+</a>
+          <a class="btn btn-primary btn-sm ml-3" role="button" data-toggle="collapse" data-target="#collapseTask1" aria-expanded="false" aria-controls="collapseTask1">+</a>
         </div>
         
         <div class="collapse col-sm-8 col-lg-6 mx-auto" id="collapseTask1">
@@ -82,33 +82,59 @@
               <label for="exampleFormControlInput1" class="form-label">Почтовый адрес</label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
-            <div class="mb-3">
+            <div class="mb-5">
               <label for="exampleFormControlInput1" class="form-label">Телефон</label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+7 (999) 999-9999">
             </div>
-            <div class="mb-3">
-              <label for="exampleDataList" class="form-label">Отдел</label>
-              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Выберите отдел...">
-              <datalist id="datalistOptions">
-                <option value="Отдел 1">
-                <option value="Отдел 2">
-                <option value="Отдел 3">
-              </datalist>
+            <div class="dropdown mb-3">
+              <button class="dropdown-toggle link-secondary none-decor pl-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                Привязать отделы
+              </button>
+              <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                <li class="form-check dropdown-item m-1">
+                  <label class="form-check-label ml-1">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Отдел 1
+                  </label>
+                </li>
+                <li class="form-check dropdown-item m-1">
+                  <label class="form-check-label ml-1">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Отдел 2
+                  </label>
+                </li>
+              </ul>
             </div>
-            <div class="mb-5">
-              <label for="DataList" class="form-label">Права доступа</label>
-              <input class="form-control" list="datalistOptions2" id="DataList" placeholder="Выберите права доступа...">
-              <datalist id="datalistOptions2">
-                <option value="Сотрудник">
-                <option value="Уникальные права">
-                <option value="Суперадмин">
-              </datalist>
+            <div class="dropdown mb-5">
+              <button class="dropdown-toggle link-secondary none-decor pl-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                Права доступа
+              </button>
+              <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                <li class="form-check dropdown-item m-1">
+                  <label class="form-check-label ml-1">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Сотрудник
+                  </label>
+                </li>
+                <li class="form-check dropdown-item m-1">
+                  <label class="form-check-label ml-1">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Уникальные права
+                  </label>
+                </li>
+                <li class="form-check dropdown-item m-1">
+                  <label class="form-check-label ml-1">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Суперадмин
+                  </label>
+                </li>
+              </ul>
             </div>
             <button class="btn btn-primary">Сохранить</button>
           </form>
         </div>
 
-        <table class="table table-borderless tr-active table-responsive overflow-scroll mb-5">
+        <table class="table table-borderless tr-active table-responsive overflow-scroll none-decor-l mb-5">
           <thead class="border-bottom">
             <tr>
               <th></th>
@@ -119,38 +145,69 @@
               <th scope="col"><button class="sort-item none-decor">Телефон</button></th>
               <th scope="col"><button class="sort-item none-decor">Отдел</button></th>
               <th scope="col"><button class="sort-item none-decor text-nowrap">Права доступа</button></th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
             <tr class="border-bottom">
               <td><input class="form-check-input" type="checkbox" value="" id=""></td>
               <td class="col-1">Главный инженер</td>
-              <td class="col-auto">Заблаговещенский Ворфоломей Антипович</td>
+              <td class="col-auto"><a class="link-secondary" href="worker.html">Заблаговещенский Ворфоломей Антипович</a></td>
               <td class="col-auto text-nowrap">morkov-kov@mail.ru</td>
               <td class="col-auto text-nowrap">morkov-kov-kov@mail.ru</td>
               <td class="col-auto text-nowrap">+7 (999) 852-7114</td>
-              <td class="col-auto">Отдел проектирования</td>
+              <td class="col-auto">Отдел проектирования, Еще один прикрепленный отдел</td>
               <td class="col-auto">Сотрудник</td>
+              <td>
+                <div class="dropdown">
+                  <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" type="button" href="edit-worker.html">Редактировать</a></li>
+                    <li><button class="dropdown-item" type="button">Акт / Деакт</button></li>
+                    <li><button class="dropdown-item" type="button">Удалить</button></li>
+                  </ul>
+                </div>
+              </td>
             </tr>
             <tr class="border-bottom">
                 <td><input class="form-check-input" type="checkbox" value="" id=""></td>
                 <td class="col-1">Инженер</td>
-                <td class="col-auto">Морковников Ворфоломей Антипович</td>
+                <td class="col-auto"><a class="link-secondary" href="worker.html">Морковников Ворфоломей Антипович</a></td>
                 <td class="col-auto text-nowrap">morkov-kov@mail.ru</td>
                 <td class="col-auto text-nowrap">morkov-kov@mail.ru</td>
                 <td class="col-auto text-nowrap">+7 (999) 852-7114</td>
                 <td class="col-auto">Отдел проектирования</td>
                 <td class="col-auto">Уникальные права</td>
+                <td>
+                  <div class="dropdown">
+                    <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                      <li><a class="dropdown-item" type="button" href="edit-worker.html">Редактировать</a></li>
+                      <li><button class="dropdown-item" type="button">Акт / Деакт</button></li>
+                      <li><button class="dropdown-item" type="button">Удалить</button></li>
+                    </ul>
+                  </div>
+                </td>
             </tr>
             <tr class="border-bottom">
               <td><input class="form-check-input" type="checkbox" value="" id=""></td>
               <td class="col-1">Инженер</td>
-              <td class="col-auto">Морковников Ворфоломей Антипович</td>
+              <td class="col-auto"><a class="link-secondary" href="worker.html">Морковников Ворфоломей Антипович</a></td>
               <td class="col-auto text-nowrap">morkov-kov@mail.ru</td>
               <td class="col-auto text-nowrap">morkov-kov@mail.ru</td>
               <td class="col-auto text-nowrap">+7 (999) 852-7114</td>
               <td class="col-auto">Отдел проектирования</td>
               <td class="col-auto">Суперадмин</td>
+              <td>
+                <div class="dropdown">
+                  <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" type="button" href="edit-worker.html">Редактировать</a></li>
+                    <li><button class="dropdown-item" type="button">Акт / Деакт</button></li>
+                    <li><button class="dropdown-item" type="button">Удалить</button></li>
+                  </ul>
+                </div>
+              </td>
           </tr>
           </tbody>
         </table>
