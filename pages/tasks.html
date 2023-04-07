@@ -74,7 +74,7 @@
           <a class="btn btn-primary btn-sm ml-3" role="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">+</a>
         </div>
         
-        <div class="collapse mt-3" id="collapse1">
+        <div class="collapse form-bg mt-3" id="collapse1">
           <form>
             <input type="email" class="form-control mb-5" placeholder="Название задачи..." id="exampleInputEmail1" aria-describedby="emailHelp">
             <h5 class="mb-3">Отделы</h5>
@@ -159,24 +159,6 @@
         </div>
       </div>
     </main>
-
-    <script>
-      let rotates = document.getElementsByClassName('turn');
-      
-      for (const rotate of rotates) {
-        let rotateBtn = rotate.children[0];
-        rotateBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        rotateBtn.classList.toggle('rotate');
-        });
-
-        document.addEventListener('click', () => {
-        if (rotate.classList.contains('show')) {
-          rotateBtn.classList.remove('rotate');
-        }
-        });
-      }
-    </script>
 
     <script src="../assets/b4140694/jquery.min.js"></script>
     <script src="../assets/5b44884/js/bootstrap.bundle.js"></script>

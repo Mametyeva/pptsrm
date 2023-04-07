@@ -68,7 +68,7 @@
           <a class="btn btn-primary btn-sm ml-3" role="button" data-toggle="collapse" data-target="#collapseTask1" aria-expanded="false" aria-controls="collapseTask1">+</a>
         </div>
         
-        <div class="collapse" id="collapseTask1">
+        <div class="collapse form-bg" id="collapseTask1">
           <form class="mb-3 d-md-flex">
             <div class="col-md-6">
               <div class="mb-3">
@@ -212,8 +212,8 @@
         rotateBtn.classList.toggle('rotate');
         });
 
-        document.addEventListener('click', () => {
-        if (rotate.classList.contains('show')) {
+        document.addEventListener('click', (e) => {
+        if (!rotate.contains(e.target)) {
           rotateBtn.classList.remove('rotate');
         }
         });

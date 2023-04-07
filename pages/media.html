@@ -68,10 +68,10 @@
           <thead class="border-bottom">
             <tr class="w-100">
               <th scope="col"></th>
-              <th scope="col"><button class="sort-item none-decor">Дата</button></th>
-              <th scope="col"><button class="sort-item none-decor">Имя</button></th>
-              <th scope="col"><button class="sort-item none-decor">Задача</button></th>
-              <th scope="col"><button class="sort-item none-decor">Автор</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor">Дата</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor">Имя</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor">Задача</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor">Автор</button></th>
             </tr>
           </thead>
           <tbody>
@@ -100,6 +100,18 @@
         </table>
       </div>
     </main>
+    <script>
+      let rotates = document.getElementsByClassName('turn');
+      
+      for (const rotate of rotates) {
+        let rotateBtn = rotate.children[0];
+        rotateBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        rotateBtn.classList.toggle('rotate');
+        });
+      };
+    </script>
+
     <script src="../assets/b4140694/jquery.min.js"></script>
     <script src="../assets/5b44884/js/bootstrap.bundle.js"></script>
   </body>

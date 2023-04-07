@@ -69,51 +69,7 @@
           </div>
           <div class="row gy-3">
             <div class="col-auto"><img class="w-100 h-auto" style="min-width:100px; max-width:200px" src="../woman-bird.jpg"></div>
-            <!-- <div class="col-auto overflow-hidden" style="width:180px; height:156px"><img class="w-100 h-auto" src="../woman-bird.jpg"></div> -->
-            <div class="col">
-                <!-- <table>
-                    <tbody>
-                        <tr>
-                            <th class="col-2 text-muted font-weight-light">Должность</th>
-                            <td><input type="text" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="Инженер"></td>
-                        </tr>
-                        <tr>
-                            <th class="col-2 text-muted font-weight-light">Логин</th>
-                            <td class="text-nowrap"><input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="morkov-kov@mail.ru"></td>
-                        </tr>
-                        <tr>
-                            <th class="col-2 text-muted font-weight-light">Почта</th>
-                            <td class="text-nowrap"><input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="morkov-kov@mail.ru"></td>
-                        </tr>
-                        <tr>
-                            <th class="col-2 text-muted font-weight-light">Телефон</th>
-                            <td class="text-nowrap"><input type="tel" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="+7 (999) 852-7114"></td>
-                        </tr>
-                        <tr>
-                            <th class="col-2 text-muted font-weight-light">Отдел</th>
-                            <td>
-                                <select class="form-select form-select-sm" aria-label="Select example">
-                                    <option selected>Отдел проектирования</option>
-                                    <option value="1">Отдел 1</option>
-                                    <option value="2">Отдел 2</option>
-                                    <option value="3">Отдел 3</option>
-                                  </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="col-2 text-muted font-weight-light text-nowrap">Права доступа</th>
-                            <td class="text-nowrap">
-                                <select class="form-select form-select-sm" aria-label="Default select example">
-                                    <option selected>Сотрудник</option>
-                                    <option value="1">Сотрудник</option>
-                                    <option value="2">Уникальные права</option>
-                                    <option value="3">Суперадмин</option>
-                                  </select>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table> -->
-
+            <div class="col-auto">
                 <div class="d-table-row">
                     <div class="d-table-cell text-muted font-weight-light">Должность</div>
                     <div class="d-table-cell px-2 p-1"><input type="text" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="Инженер"></div>
@@ -131,27 +87,67 @@
                     <div class="d-table-cell text-nowrap px-2 p-1"><input type="tel" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="+7 (999) 852-7114"></div>
                   </div>
                   <div class="d-table-row">
-                    <div class="d-table-cell text-muted font-weight-light">Отдел</div>
-                    <div class="d-table-cell px-2 p-1">
-                        <select class="form-select form-select-sm" aria-label="Выберите отделы">
-                            <option selected>Отдел проектирования</option>
-                            <option value="1">Отдел 1</option>
-                            <option value="2">Отдел 2</option>
-                            <option value="3">Отдел 3</option>
-                        </select>
+                    <div class="d-table-cell text-nowrap pt-3">
+                      <div class="dropdown mb-3 turn">
+                        <button class="dropdown-toggle link-secondary none-decor pl-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                          Права доступа
+                        </button>
+                        <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                          <li class="form-check dropdown-item m-1">
+                            <label class="form-check-label ml-1">
+                              <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault1">
+                              Сотрудник
+                            </label>
+                          </li>
+                          <li class="form-check dropdown-item m-1">
+                            <label class="form-check-label ml-1">
+                              <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault1">
+                              Уникальные права
+                            </label>
+                          </li>
+                          <li class="form-check dropdown-item m-1">
+                            <label class="form-check-label ml-1">
+                              <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault1">
+                              Суперадмин
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                  <div class="d-table-row">
-                    <div class="d-table-cell text-muted font-weight-light text-nowrap">Права доступа</div>
-                    <div class="d-table-cell text-nowrap px-2 p-1">
-                        <select class="form-select form-select-sm" aria-label="Выберите права">
-                            <option selected>Сотрудник</option>
-                            <option value="1">Сотрудник</option>
-                            <option value="2">Уникальные права</option>
-                            <option value="3">Суперадмин</option>
-                        </select>
-                    </div>
-                  </div>
+            </div>
+            <div class="col-auto">
+              <label for="departments-list" class="form-label text-muted font-weight-light">Отделы</label>
+              <div class="list-group-flush none-decor-l overflow-hidden mb-3 pt-2" id="departments-list">
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="" checked>
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Отдел сопровождения</a>
+                </div>
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Отдел технического обслуживания</a>
+                </div>
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Монтажный отдел</a>
+                </div>
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Проектный отдел</a>
+                </div>
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Маркетинг</a>
+                </div>
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Отдел бухгалтерии</a>
+                </div>
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Отдел продаж</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="mt-5 mb-5">
@@ -218,14 +214,32 @@
               </div>
           </div>
         </div>
-        <div class="container d-flex justify-content-between mb-5">
-            <div class="d-flex">
-                <button class="btn btn-secondary  mr-3" type="button" id="">Удалить</button>
-                <button class="btn btn-secondary  mr-3" type="button" id="">Деактивировать</button>
+        <div class="container d-flex justify-content-between flex-wrap mb-5">
+            <div class="d-flex mb-3">
+                <button class="btn btn-secondary mr-3" type="button" id="">Удалить</button>
+                <button class="btn btn-secondary mr-2" type="button" id="">Деактивировать</button>
             </div>
-            <button class="btn btn-primary" type="button" id="">Сохранить</button>
+            <button class="btn btn-primary mb-3" type="button" id="">Сохранить</button>
         </div>
     </main>
+    <script>
+      let rotates = document.getElementsByClassName('turn');
+      
+      for (const rotate of rotates) {
+        let rotateBtn = rotate.children[0];
+        rotateBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        rotateBtn.classList.toggle('rotate');
+        });
+
+        document.addEventListener('click', (e) => {
+        if (!rotate.contains(e.target)) {
+          rotateBtn.classList.remove('rotate');
+        }
+        });
+      };
+    </script>
+    
     <script src="../assets/b4140694/jquery.min.js"></script>
     <script src="../assets/5b44884/js/bootstrap.bundle.js"></script>
   </body>

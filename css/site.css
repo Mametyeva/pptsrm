@@ -150,6 +150,15 @@ tbody th img {
     transform: rotate(180deg);
 }
 
+.form-bg {
+    background-color: #f8f9fa;
+    padding: 24px;
+}
+
+.form-bg .list-group-item {
+    background-color: #f8f9fa;
+}
+
 @media(max-width:767px) {
     .nav li > form > button.logout {
         display:block;
