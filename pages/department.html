@@ -64,7 +64,7 @@
     <main>
       <div class="container mt-5">
         <div class="d-flex align-items-center mb-5">
-          <h1>Название отдела</h1>
+          <h1>Отдел 1</h1>
           <button class="btn edit-btn align-self-start ml-3"></button>
         </div>
         <div class="d-flex align-items-center mb-5">
@@ -75,13 +75,13 @@
         <table class="table table-borderless tr-active table-responsive overflow-scroll none-decor-l">
           <thead class="border-bottom">
             <tr>
-              <th scope="col"><button class="sort-item none-decor">ФИО</button></th>
-              <th scope="col"><button class="sort-item none-decor text-nowrap">Должность</button></th>
-              <th scope="col"><button class="sort-item none-decor">Логин</button></th>
-              <th scope="col"><button class="sort-item none-decor">Почта</button></th>
-              <th scope="col"><button class="sort-item none-decor">Телефон</button></th>
-              <th scope="col"><button class="sort-item none-decor text-nowrap">Права доступа</button></th>
-              <th scope="col"></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor">ФИО</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor text-nowrap">Должность</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor">Логин</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor">Почта</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor">Телефон</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor text-nowrap">Права доступа</button></th>
+              <th scope="col" class="turn"></th>
             </tr>
           </thead>
           <tbody>
@@ -141,13 +141,56 @@
           </tr>
           </tbody>
         </table>
+
+        <!-- <div class="d-table tr-active overflow-auto none-decor-l" style="max-width: 500px">
+          <div class="d-table-row">
+              <div class="d-table-cell col-auto sort h6"><button class="sort-item none-decor">ФИО</button></div>
+              <div class="d-table-cell col-auto sort h6"><button class="sort-item none-decor text-nowrap">Должность</button></div>
+              <div class="d-table-cell col-auto sort h6"><button class="sort-item none-decor">Логин</button></div>
+              <div class="d-table-cell col-auto sort h6"><button class="sort-item none-decor">Почта</button></div>
+              <div class="d-table-cell col-auto sort h6"><button class="sort-item none-decor">Телефон</button></div>
+              <div class="d-table-cell col-auto sort h6"><button class="sort-item none-decor text-nowrap">Права доступа</button></div>
+              <div class="d-table-cell col sort"></div>
+          </div>
+          <a class="link-secondary d-table-row" href="worker.html">
+            <div class="d-table-cell col-auto">Заблаговещенский Ворфоломей Антипович</div>
+            <div class="d-table-cell col-auto">Главный инженер</div>
+            <div class="d-table-cell col-auto text-nowrap">morkov-kov@mail.ru</div>
+            <div class="d-table-cell col-auto text-nowrap">morkov-kov-kov@mail.ru</div>
+            <div class="d-table-cell col-auto text-nowrap">+7 (999) 852-7114</div>
+            <div class="d-table-cell col-auto">Сотрудник</div>
+            <div class="d-table-cell col">
+              <div class="dropdown">
+                <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><button class="dropdown-item" type="button" href="edit-worker.html">Редактировать</button></li>
+                  <li><button class="dropdown-item" type="button">Акт / Деакт</button></li>
+                  <li><button class="dropdown-item" type="button">Удалить</button></li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div> -->
       </div>
       
       <div class="container d-flex justify-content-between mb-5">
-        <button class="btn btn-secondary" type="button" id="">Удалить</button>
+        <button class="btn btn-secondary mr-3" type="button" id="">Удалить</button>
         <button class="btn btn-primary" type="button" id="">Сохранить</button>
       </div>
     </main>
+
+    <script>
+      let rotates = document.getElementsByClassName('turn');
+      
+      for (const rotate of rotates) {
+        let rotateBtn = rotate.children[0];
+        rotateBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        rotateBtn.classList.toggle('rotate');
+        });
+      }
+    </script>
+
     <script src="../assets/b4140694/jquery.js"></script>
     <script src="../assets/5b44884/js/bootstrap.bundle.js"></script>
     </body>

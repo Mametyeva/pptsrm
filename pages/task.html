@@ -71,7 +71,7 @@
         <div class="mt-5 overflow-auto">
           <div class="d-flex align-items-baseline justify-content-between">
             <h4>Сообщения</h4>
-            <div class="dropdown">
+            <div class="dropdown turn">
               <button class="dropdown-toggle link-secondary none-decor pl-0" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
                 Сортировка
               </button>
@@ -151,20 +151,48 @@
                 </div>
               </div>
               
-              <button class="btn btn-primary mt-3" type="button" id="button-addon2">Отправить</button>
+              <button class="btn btn-primary mt-3 mb-5" type="button" id="button-addon2">Отправить</button>
             </form>
+          </div>
+
+          <h4 class="mt-5 mb-3">Документы</h4>
+          <div class="list-group-flush mb-3 none-decor-l overflow-auto" style="min-height: 130px;">
+            <div class="list-group-item list-group-item-action">
+              <a class="mb-1" href="files.html">Файлы</a>
+            </div>
+            <div class="list-group-item list-group-item-action">
+              <a class="mb-1" href="media.html">Медиа</a>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="container d-flex justify-content-between mb-5">
         <div class="d-flex">
-          <button class="btn btn-secondary" type="button" id="">Удалить</button>
-          <button class="btn btn-secondary ml-3" type="button" id="">Деактивировать</button>
+          <button class="btn btn-secondary mr-3" type="button" id="">Удалить</button>
+          <button class="btn btn-secondary mr-3" type="button" id="">Деактивировать</button>
         </div>
         <button class="btn btn-primary" type="button" id="">Сохранить</button>
       </div>
     </main>
+    <script>
+      let rotates = document.getElementsByClassName('turn');
+      
+      for (const rotate of rotates) {
+        let rotateBtn = rotate.children[0];
+        rotateBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        rotateBtn.classList.toggle('rotate');
+        });
+
+        document.addEventListener('click', () => {
+        if (rotate.classList.contains('show')) {
+          rotateBtn.classList.remove('rotate');
+        }
+        });
+      }
+    </script>
+
     <script src="../assets/b4140694/jquery.min.js"></script>
     <script src="../assets/5b44884/js/bootstrap.bundle.js"></script>
   </body>

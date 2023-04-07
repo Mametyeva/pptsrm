@@ -68,83 +68,101 @@
           <a class="btn btn-primary btn-sm ml-3" role="button" data-toggle="collapse" data-target="#collapseTask1" aria-expanded="false" aria-controls="collapseTask1">+</a>
         </div>
         
-        <div class="collapse col-sm-8 col-lg-6 mx-auto" id="collapseTask1">
-          <form class="mb-5">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">ФИО сотрудника</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Иванов Иван Иванович">
+        <div class="collapse" id="collapseTask1">
+          <form class="mb-3 d-md-flex">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">ФИО сотрудника</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Иванов Иван Иванович">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Должность</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Название должности">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Почтовый адрес</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Телефон</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+7 (999) 999-9999">
+              </div>
+
+              <div class="dropdown mb-3 turn">
+                <button class="dropdown-toggle link-secondary none-decor pl-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                  Права доступа
+                </button>
+                <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                  <li class="form-check dropdown-item m-1">
+                    <label class="form-check-label ml-1">
+                      <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault1">
+                      Сотрудник
+                    </label>
+                  </li>
+                  <li class="form-check dropdown-item m-1">
+                    <label class="form-check-label ml-1">
+                      <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault1">
+                      Уникальные права
+                    </label>
+                  </li>
+                  <li class="form-check dropdown-item m-1">
+                    <label class="form-check-label ml-1">
+                      <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault1">
+                      Суперадмин
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Должность</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Название должности">
+
+            <div class="col-md-6">
+              <label for="departments-list" class="form-label">Отделы</label>
+              <div class="list-group-flush none-decor-l overflow-hidden mb-3 pt-2" id="departments-list">
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Отдел сопровождения</a>
+                </div>
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Отдел технического обслуживания</a>
+                </div>
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Монтажный отдел</a>
+                </div>
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Проектный отдел</a>
+                </div>
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Маркетинг</a>
+                </div>
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Отдел бухгалтерии</a>
+                </div>
+                <div class="list-group-item list-group-item-action d-flex justify-content-between ml-2">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <a class="link-secondary mb-1 ml-3" href="department.html">Отдел продаж</a>
+                </div>
+              </div>
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Почтовый адрес</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-5">
-              <label for="exampleFormControlInput1" class="form-label">Телефон</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+7 (999) 999-9999">
-            </div>
-            <div class="dropdown mb-3">
-              <button class="dropdown-toggle link-secondary none-decor pl-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                Привязать отделы
-              </button>
-              <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
-                <li class="form-check dropdown-item m-1">
-                  <label class="form-check-label ml-1">
-                    <input class="form-check-input" type="checkbox" value="">
-                    Отдел 1
-                  </label>
-                </li>
-                <li class="form-check dropdown-item m-1">
-                  <label class="form-check-label ml-1">
-                    <input class="form-check-input" type="checkbox" value="">
-                    Отдел 2
-                  </label>
-                </li>
-              </ul>
-            </div>
-            <div class="dropdown mb-5">
-              <button class="dropdown-toggle link-secondary none-decor pl-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                Права доступа
-              </button>
-              <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
-                <li class="form-check dropdown-item m-1">
-                  <label class="form-check-label ml-1">
-                    <input class="form-check-input" type="checkbox" value="">
-                    Сотрудник
-                  </label>
-                </li>
-                <li class="form-check dropdown-item m-1">
-                  <label class="form-check-label ml-1">
-                    <input class="form-check-input" type="checkbox" value="">
-                    Уникальные права
-                  </label>
-                </li>
-                <li class="form-check dropdown-item m-1">
-                  <label class="form-check-label ml-1">
-                    <input class="form-check-input" type="checkbox" value="">
-                    Суперадмин
-                  </label>
-                </li>
-              </ul>
-            </div>
-            <button class="btn btn-primary">Сохранить</button>
           </form>
+          <button class="btn btn-primary mb-5 mt-3 ml-3">Добавить</button>
         </div>
 
-        <table class="table table-borderless tr-active table-responsive overflow-scroll none-decor-l mb-5">
+        <table class="table table-borderless tr-active table-responsive overflow-scroll none-decor-l my-5">
           <thead class="border-bottom">
             <tr>
               <th></th>
-              <th scope="col"><button class="sort-item none-decor text-nowrap">Должность</button></th>
-              <th scope="col"><button class="sort-item none-decor">ФИО</button></th>
-              <th scope="col"><button class="sort-item none-decor">Логин</button></th>
-              <th scope="col"><button class="sort-item none-decor">Почта</button></th>
-              <th scope="col"><button class="sort-item none-decor">Телефон</button></th>
-              <th scope="col"><button class="sort-item none-decor">Отдел</button></th>
-              <th scope="col"><button class="sort-item none-decor text-nowrap">Права доступа</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor text-nowrap">Должность</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor">ФИО</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor">Логин</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor">Почта</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor">Телефон</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor">Отдел</button></th>
+              <th scope="col" class="turn"><button class="sort-item none-decor text-nowrap">Права доступа</button></th>
             </tr>
           </thead>
           <tbody>
@@ -183,6 +201,25 @@
         <button class="btn btn-primary none-decor-l"><a href="department.html">Сохранить</a></button>
       </div>
     </main>
+
+    <script>
+      let rotates = document.getElementsByClassName('turn');
+      
+      for (const rotate of rotates) {
+        let rotateBtn = rotate.children[0];
+        rotateBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        rotateBtn.classList.toggle('rotate');
+        });
+
+        document.addEventListener('click', () => {
+        if (rotate.classList.contains('show')) {
+          rotateBtn.classList.remove('rotate');
+        }
+        });
+      };
+    </script>
+
     <script src="../assets/b4140694/jquery.min.js"></script>
     <script src="../assets/5b44884/js/bootstrap.bundle.js"></script>
   </body>
