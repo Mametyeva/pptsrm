@@ -40,21 +40,26 @@
                 <a class="nav-link" href="/">Главная</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="progects.html">Проекты</a>
+                <a class="nav-link" href="../pages/progects.html">Проекты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tasks.html">Задачи</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/departments.html">Отделы</a>
               </li>
             </ul>
             <ul id="w1" class="navbar-nav nav">
-              <li class="nav-item">
-                <a class="nav-link" href="/site/about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/site/contact">Contact</a>
-              </li>
-              <li class="nav-item">
+              <li class="nav-item d-none">
                 <a class="nav-link" href="/site/signup">Signup</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item d-none">
                 <a class="nav-link" href="/site/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-truncate d-blok" href="../pages/worker.html" style="max-width: 220px">example-name@mail.ru</a>
+                <!-- вариант ссылки для суперадмина
+                  <a class="nav-link text-truncate d-blok" href="../pages/edit-worker.html" style="max-width: 220px">example-name@mail.ru</a> -->
               </li>
             </ul>
           </div>
@@ -64,7 +69,7 @@
     <main>
       <div class="container-md mt-5">
         <div class="d-flex align-items-center mb-5">
-          <h1>Название отдела</h1>
+          <h1>Отдел 1</h1>
           <button class="btn edit-btn align-self-start ml-3"></button>
         </div>
         <div class="d-flex align-items-center mb-3">
@@ -79,7 +84,7 @@
               <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                 <li><button class="dropdown-item" type="button">Редактировать</button></li>
-                <li><button class="dropdown-item" type="button">Акт / Деакт</button></li>
+                <li><button class="dropdown-item" type="button">Отвязать</button></li>
                 <li><button class="dropdown-item" type="button">Удалить</button></li>
               </ul>
             </div>
@@ -90,7 +95,7 @@
               <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                 <li><button class="dropdown-item" type="button">Редактировать</button></li>
-                <li><button class="dropdown-item" type="button">Акт / Деакт</button></li>
+                <li><button class="dropdown-item" type="button">Отвязать</button></li>
                 <li><button class="dropdown-item" type="button">Удалить</button></li>
               </ul>
             </div>
@@ -101,7 +106,7 @@
               <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                 <li><button class="dropdown-item" type="button">Редактировать</button></li>
-                <li><button class="dropdown-item" type="button">Акт / Деакт</button></li>
+                <li><button class="dropdown-item" type="button">Отвязать</button></li>
                 <li><button class="dropdown-item" type="button">Удалить</button></li>
               </ul>
             </div>
@@ -112,7 +117,7 @@
               <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                 <li><button class="dropdown-item" type="button">Редактировать</button></li>
-                <li><button class="dropdown-item" type="button">Акт / Деакт</button></li>
+                <li><button class="dropdown-item" type="button">Отвязать</button></li>
                 <li><button class="dropdown-item" type="button">Удалить</button></li>
               </ul>
             </div>
@@ -123,7 +128,7 @@
               <button class="btn edit-btn sm" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false"></button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                 <li><button class="dropdown-item" type="button">Редактировать</button></li>
-                <li><button class="dropdown-item" type="button">Акт / Деакт</button></li>
+                <li><button class="dropdown-item" type="button">Отвязать</button></li>
                 <li><button class="dropdown-item" type="button">Удалить</button></li>
               </ul>
             </div>
@@ -131,8 +136,7 @@
         </div>
       </div>
       
-      <div class="container-md d-flex justify-content-between mb-5">
-        <button class="btn btn-secondary mr-3" type="button" id="">Удалить</button>
+      <div class="container-md mb-5">
         <button class="btn btn-primary" type="button" id="">Сохранить</button>
       </div>
     </main>
