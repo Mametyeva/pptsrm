@@ -40,26 +40,21 @@
                 <a class="nav-link" href="/">Главная</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/progects.html">Проекты</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/tasks.html">Задачи</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/departments.html">Отделы</a>
+                <a class="nav-link" href="progects.html">Проекты</a>
               </li>
             </ul>
             <ul id="w1" class="navbar-nav nav">
-              <li class="nav-item d-none">
-                <a class="nav-link" href="/site/signup">Signup</a>
-              </li>
-              <li class="nav-item d-none">
-                <a class="nav-link" href="/site/login">Login</a>
+              <li class="nav-item">
+                <a class="nav-link" href="/site/about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-truncate d-blok" href="../pages/worker.html" style="max-width: 220px">example-name@mail.ru</a>
-                <!-- вариант ссылки для суперадмина
-                  <a class="nav-link text-truncate d-blok" href="../pages/edit-worker.html" style="max-width: 220px">example-name@mail.ru</a> -->
+                <a class="nav-link" href="/site/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/site/signup">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/site/login">Login</a>
               </li>
             </ul>
           </div>
@@ -87,7 +82,7 @@
             </div>
           </div>
 
-          <div class="list-group mt-3 mb-5 overflow-auto" style="max-height: 500px">
+          <div class="list-group mt-3 mb-5 overflow-auto">
               <div class="list-group-item p-3">
                   <div class="d-flex justify-content-between">
                     <div class="none-decor-l">
@@ -118,7 +113,7 @@
                       <p><small class="text-muted font-weight-light d-none">Составление документации монтажных работ</small></p> 
                     </div>
                     <div class="d-flex">
-                      <a class="btn btn-link align-self-start" href="files.html"><img src="../icons/file-earmark.svg"></a>
+                      <button class="btn btn-link align-self-start" data-toggle="modal" data-target="#staticBackdrop" type="button"><img src="../icons/file-earmark.svg"></button>
                       <div class="dropdown align-self-start">
                         <button class="btn edit-btn" role="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false"></button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
@@ -139,33 +134,32 @@
               <textarea row="3" type="text" class="form-control" placeholder="Введите сообщение" aria-describedby="button-addon2"></textarea>
               
               <div class="d-sm-flex justify-content-center">
-                <div class="form-file form-file-sm mt-3 mr-2 w-100">
-                  <input type="file" class="form-file-input" id="customFile">
-                  <label class="form-file-label" for="customFile">
-                    <span class="form-file-text">Выберите файл...</span>
-                    <span class="form-file-button btn-secondary">Выбрать</span>
-                  </label>
+                <div class="input-group mt-3 mr-3">
+                  <div class="custom-file form-file-sm">
+                    <input id="inputGroupFile03" type="file" class="custom-file-input" multiple>
+                    <label class="custom-file-label" for="inputGroupFile03">Выберите файл...</label>
+                  </div>
                 </div>
-    
-                <div class="form-file form-file-sm mt-3 w-100">
-                  <input type="file" class="form-file-input" id="customFile">
-                  <label class="form-file-label" for="customFile">
-                    <span class="form-file-text">Выберите медиа...</span>
-                    <span class="form-file-button btn-secondary">Выбрать</span>
-                  </label>
+                <div class="input-group mt-3">
+                  <div class="custom-file form-file-sm">
+                    <input id="inputGroupFile03" type="file" class="custom-file-input" multiple>
+                    <label class="custom-file-label" for="inputGroupFile03">Выберите медиа...</label>
+                  </div>
                 </div>
-              </div>
+              </div> 
               
               <button class="btn btn-primary mt-3" type="button" id="button-addon2">Отправить</button>
             </form>
           </div>
 
           <h4 class="mt-5 mb-3">Документы</h4>
-          <div class="list-group-flush mb-3 none-decor-l overflow-auto" style="min-height: 130px;">
+          <div class="list-group-flush mb-3 none-decor-l overflow-auto">
             <div class="list-group-item list-group-item-action">
+              <a class="mr-2" href="files.html"><img src="../icons/file-earmark.svg"></a>
               <a class="mb-1" href="files.html">Файлы</a>
             </div>
             <div class="list-group-item list-group-item-action">
+              <a class="mr-2" href="media.html"><img src="../icons/music-note-beamed.svg"></a>
               <a class="mb-1" href="media.html">Медиа</a>
             </div>
           </div>
@@ -173,14 +167,52 @@
       </div>
 
       <div class="container-md d-flex justify-content-between flex-wrap">
-        <button class="btn btn-primary mb-5 mr-1" type="button" id="">Сохранить</button>
         <div class="d-flex mb-5">
             <button class="btn btn-secondary mr-2 mr-sm-3" type="button" id="">Удалить</button>
-            <button class="btn btn-secondary" type="button" id="">Деактивировать</button>
+            <button class="btn btn-secondary mr-1" type="button" id="">Деактивировать</button>
         </div>
+        <button class="btn btn-primary mb-5" type="button" id="" data-toggle="modal" data-target="#exampleModal">Сохранить</button>
       </div>
+      
+      <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5>Прикрепленные документы</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row wrap">
+                    <div class="col-4 col-sm-3 text-left">
+                      <a class="d-block" href="#"><img class="modal-img" src="../icons/file-earmark.svg"></a>
+                      <p class="text-truncate mb-0"><small>Name of the file</small></p>
+                      <p class="text-truncate text-muted"><small>23.04.2023</small></p>
+                    </div>
+                    <div class="col-4 col-sm-3 text-left">
+                      <a class="d-block" href="#"><img class="modal-img" src="../icons/file-image.svg"></a>
+                      <p class="text-truncate mb-0"><small>Name of the file</small></p>
+                      <p class="text-truncate text-muted"><small>23.04.2023</small></p>
+                    </div>
+                    <div class="col-4 col-sm-3 text-left">
+                      <a class="d-block" href="#"><img class="modal-img" src="../icons/file-play.svg"></a>
+                      <p class="text-truncate mb-0"><small>Name of the file</small></p>
+                      <p class="text-truncate text-muted"><small>23.04.2023</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
     <script>
+      bsCustomFileInput.init();
+      
       let rotates = document.getElementsByClassName('turn');
       
       for (const rotate of rotates) {
@@ -197,7 +229,6 @@
         });
       }
     </script>
-
     <script src="../assets/b4140694/jquery.min.js"></script>
     <script src="../assets/5b44884/js/bootstrap.bundle.js"></script>
   </body>

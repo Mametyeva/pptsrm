@@ -92,7 +92,7 @@ small {
     font-size: 13px;
 }
 
-.form-file-text {
+.custom-file-label {
     color: #6c757d;
 }
 
@@ -157,6 +157,56 @@ tbody th img {
 
 .form-bg .list-group-item {
     background-color: #f8f9fa;
+}
+
+.modal-img {
+    width: 40px;
+    height:auto;
+}
+
+.modal-body .text-truncate {
+    max-width: 100px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.photo img {
+    min-width:100px;
+    max-width:200px;
+}
+
+td.email {
+    max-width: 200px;
+}
+
+td.description {
+    max-width: 400px;
+}
+
+.list-group-flush.list-h {
+    max-height: 500px;
+}
+
+.list-group-flush.collapse {
+    max-height: 300px;
+}
+
+.list-group-flush .list-group-item {
+    padding-left: 24px;
+}
+
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+    content: "Выбрать";
+}
+
+.custom-file-input:lang(en):hover ~ .custom-file-label::after {
+    background-color: #e4e4e4;
+}
+
+.nav-link.text-truncate {
+    max-width: 220px;
 }
 
 @media(max-width:767px) {
